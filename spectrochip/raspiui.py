@@ -14,7 +14,7 @@ np.set_printoptions(threshold = sys.maxsize)
 config = configparser.ConfigParser()
 config.read('config.ini')
 
-shutter = config['default']['shutter'] #max 1,000,000
+shutter = config['default']['shutter'] 
 anolog_gain = config['default']['anolog_gain'] #max 100,000,000
 digital_gain = config['default']['digital_gain']
 x = config['default']['x']
@@ -44,8 +44,8 @@ num_scan = config['numof_scan']['numberof_scan']
 w_length = config['sgfilter']['window_length']
 poly_order = config['sgfilter']['polyorder']
 
-st_max = 100000
-ag_max = 10000000
+st_max = 10000
+ag_max = 100000
 
 st1 = 0
 st2 = 0
